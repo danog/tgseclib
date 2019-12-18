@@ -21,13 +21,13 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\BaseCurves;
+namespace tgseclib\Crypt\EC\BaseCurves;
 
-use phpseclib3\Math\Common\FiniteField\Integer;
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Math\PrimeField;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\PrimeField\Integer as PrimeInteger;
+use tgseclib\Math\Common\FiniteField\Integer;
+use tgseclib\Common\Functions\Strings;
+use tgseclib\Math\PrimeField;
+use tgseclib\Math\BigInteger;
+use tgseclib\Math\PrimeField\Integer as PrimeInteger;
 
 /**
  * Curves over y^2 = x^3 + a*x + b
@@ -41,7 +41,7 @@ class Prime extends Base
     /**
      * Prime Field Integer factory
      *
-     * @var \phpseclib3\Math\PrimeFields
+     * @var \tgseclib\Math\PrimeFields
      */
     protected $factory;
 
@@ -475,7 +475,7 @@ class Prime extends Base
     /**
      * Returns the modulo
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     public function getModulo()
     {
@@ -485,7 +485,7 @@ class Prime extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getA()
     {
@@ -495,7 +495,7 @@ class Prime extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getB()
     {
@@ -740,7 +740,7 @@ class Prime extends Base
      * To convert a Jacobian Coordinate to an Affine Point
      * you do (x / z^2, y / z^3)
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToAffine(array $p)
     {
@@ -759,7 +759,7 @@ class Prime extends Base
     /**
      * Converts an affine point to a jacobian coordinate
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToInternal(array $p)
     {

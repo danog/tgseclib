@@ -12,7 +12,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Math\Common\FiniteField;
+namespace tgseclib\Math\Common\FiniteField;
 
 /**
  * Finite Field Integer

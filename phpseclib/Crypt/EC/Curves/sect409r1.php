@@ -13,10 +13,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace tgseclib\Crypt\EC\Curves;
 
-use phpseclib3\Crypt\EC\BaseCurves\Binary;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Crypt\EC\BaseCurves\Binary;
+use tgseclib\Math\BigInteger;
 
 class sect409r1 extends Binary
 {

@@ -12,10 +12,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Math\PrimeField;
+namespace tgseclib\Math\PrimeField;
 
-use phpseclib3\Math\Common\FiniteField\Integer as Base;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\Common\FiniteField\Integer as Base;
+use tgseclib\Math\BigInteger;
 use ParagonIE\ConstantTime\Hex;
 
 /**
@@ -30,7 +30,7 @@ class Integer extends Base
     /**
      * Holds the PrimeField's value
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      */
     protected $value;
 
@@ -44,7 +44,7 @@ class Integer extends Base
     /**
      * Holds the PrimeField's modulo
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      */
     protected static $modulo;
 
@@ -58,7 +58,7 @@ class Integer extends Base
     /**
      * Zero
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      */
     protected static $zero;
 

@@ -18,15 +18,15 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC\Formats\Keys;
+namespace tgseclib\Crypt\EC\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Prime as PrimeCurve;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use phpseclib3\Exception\UnsupportedCurveException;
+use tgseclib\Math\BigInteger;
+use tgseclib\Crypt\EC\BaseCurves\Base as BaseCurve;
+use tgseclib\Crypt\EC\BaseCurves\Prime as PrimeCurve;
+use tgseclib\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use tgseclib\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use tgseclib\Exception\UnsupportedCurveException;
 
 /**
  * XML Formatted EC Key Handler
@@ -169,7 +169,7 @@ abstract class XML
      * Extract points from an XML document
      *
      * @param \DOMXPath $xpath
-     * @param \phpseclib3\Crypt\EC\BaseCurves\Base $curve
+     * @param \tgseclib\Crypt\EC\BaseCurves\Base $curve
      * @return object[]
      */
     private static function extractPointRFC4050(\DOMXPath $xpath, BaseCurve $curve)
@@ -193,11 +193,11 @@ abstract class XML
     }
 
     /**
-     * Returns an instance of \phpseclib3\Crypt\EC\BaseCurves\Base based
+     * Returns an instance of \tgseclib\Crypt\EC\BaseCurves\Base based
      * on the curve parameters
      *
      * @param \DomXPath $xpath
-     * @return \phpseclib3\Crypt\EC\BaseCurves\Base|false
+     * @return \tgseclib\Crypt\EC\BaseCurves\Base|false
      */
     private static function loadCurveByParam(\DOMXPath $xpath)
     {
@@ -210,7 +210,7 @@ abstract class XML
                 throw new UnsupportedCurveException('Curve with OID of ' . $oid . ' is not supported');
             }
 
-            $curve = '\phpseclib3\Crypt\EC\Curves\\' . $name;
+            $curve = '\tgseclib\Crypt\EC\Curves\\' . $name;
             if (!class_exists($curve)) {
                 throw new UnsupportedCurveException('Named Curve of ' . $name . ' is not supported');
             }
@@ -273,11 +273,11 @@ abstract class XML
     }
 
     /**
-     * Returns an instance of \phpseclib3\Crypt\EC\BaseCurves\Base based
+     * Returns an instance of \tgseclib\Crypt\EC\BaseCurves\Base based
      * on the curve parameters
      *
      * @param \DomXPath $xpath
-     * @return \phpseclib3\Crypt\EC\BaseCurves\Base|false
+     * @return \tgseclib\Crypt\EC\BaseCurves\Base|false
      */
     private static function loadCurveByParamRFC4050(\DOMXPath $xpath)
     {
@@ -364,8 +364,8 @@ abstract class XML
     /**
      * Convert a public key to the appropriate format
      *
-     * @param \phpseclib3\Crypt\EC\BaseCurves\Base $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \tgseclib\Crypt\EC\BaseCurves\Base $curve
+     * @param \tgseclib\Math\Common\FiniteField\Integer[] $publicKey
      * @param array $options optional
      * @return string
      */
@@ -405,7 +405,7 @@ abstract class XML
     /**
      * Encode Parameters
      *
-     * @param \phpseclib3\Crypt\EC\BaseCurves\Base $curve
+     * @param \tgseclib\Crypt\EC\BaseCurves\Base $curve
      * @param string $pre
      * @param array $options optional
      * @return string|false

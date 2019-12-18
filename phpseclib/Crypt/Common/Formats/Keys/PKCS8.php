@@ -25,19 +25,19 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common\Formats\Keys;
+namespace tgseclib\Crypt\Common\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Crypt\DES;
-use phpseclib3\Crypt\RC2;
-use phpseclib3\Crypt\RC4;
-use phpseclib3\Crypt\AES;
-use phpseclib3\Crypt\TripleDES;
-use phpseclib3\Crypt\Random;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\File\ASN1;
-use phpseclib3\File\ASN1\Maps;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
+use tgseclib\Crypt\DES;
+use tgseclib\Crypt\RC2;
+use tgseclib\Crypt\RC4;
+use tgseclib\Crypt\AES;
+use tgseclib\Crypt\TripleDES;
+use tgseclib\Crypt\Random;
+use tgseclib\Math\BigInteger;
+use tgseclib\File\ASN1;
+use tgseclib\File\ASN1\Maps;
+use tgseclib\Exception\UnsupportedAlgorithmException;
 
 /**
  * PKCS#8 Formatted Key Handler
@@ -139,7 +139,7 @@ abstract class PKCS8 extends PKCS
     /**
      * Returns a SymmetricKey object based on a PBES1 $algo
      *
-     * @return \phpseclib3\Crypt\Common\SymmetricKey
+     * @return \tgseclib\Crypt\Common\SymmetricKey
      * @access public
      * @param string $algo
      */

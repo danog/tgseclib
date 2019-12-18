@@ -5,19 +5,19 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\PublicKeyLoader;
-use phpseclib3\Crypt\DSA\PrivateKey;
-use phpseclib3\Crypt\DSA\PublicKey;
-use phpseclib3\Crypt\DSA\Parameters;
-use phpseclib3\Crypt\DSA\Formats\Keys\PKCS1;
-use phpseclib3\Crypt\DSA\Formats\Keys\PKCS8;
-use phpseclib3\Crypt\DSA\Formats\Keys\PuTTY;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Crypt\PublicKeyLoader;
+use tgseclib\Crypt\DSA\PrivateKey;
+use tgseclib\Crypt\DSA\PublicKey;
+use tgseclib\Crypt\DSA\Parameters;
+use tgseclib\Crypt\DSA\Formats\Keys\PKCS1;
+use tgseclib\Crypt\DSA\Formats\Keys\PKCS8;
+use tgseclib\Crypt\DSA\Formats\Keys\PuTTY;
+use tgseclib\Math\BigInteger;
 
 class Unit_Crypt_DSA_LoadKeyTest extends PhpseclibTestCase
 {
     /**
-     * @expectedException \phpseclib3\Exception\NoKeyLoadedException
+     * @expectedException \tgseclib\Exception\NoKeyLoadedException
      */
     public function testBadKey()
     {
@@ -157,7 +157,7 @@ Syea3pSvWdBpVhWzOX4A7qbxs+bhWAQWAhQiF7sFfCtZ7oOgCb2aJ9ySC9sTug==
     }
 
     /**
-     * @expectedException \phpseclib3\Exception\NoKeyLoadedException
+     * @expectedException \tgseclib\Exception\NoKeyLoadedException
      */
     public function testPuTTYBadMAC()
     {

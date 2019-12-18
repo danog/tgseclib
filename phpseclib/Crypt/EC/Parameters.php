@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC;
+namespace tgseclib\Crypt\EC;
 
-use phpseclib3\Crypt\EC;
+use tgseclib\Crypt\EC;
 
 /**
  * EC Parameters

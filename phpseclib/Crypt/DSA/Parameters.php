@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DSA;
+namespace tgseclib\Crypt\DSA;
 
-use phpseclib3\Crypt\DSA;
+use tgseclib\Crypt\DSA;
 
 /**
  * DSA Parameters

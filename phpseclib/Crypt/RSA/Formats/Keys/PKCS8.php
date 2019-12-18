@@ -25,11 +25,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\RSA\Formats\Keys;
+namespace tgseclib\Crypt\RSA\Formats\Keys;
 
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Crypt\Common\Formats\Keys\PKCS8 as Progenitor;
-use phpseclib3\File\ASN1;
+use tgseclib\Math\BigInteger;
+use tgseclib\Crypt\Common\Formats\Keys\PKCS8 as Progenitor;
+use tgseclib\File\ASN1;
 
 /**
  * PKCS#8 Formatted RSA Key Handler
@@ -97,9 +97,9 @@ abstract class PKCS8 extends Progenitor
      * Convert a private key to the appropriate format.
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $n
-     * @param \phpseclib3\Math\BigInteger $e
-     * @param \phpseclib3\Math\BigInteger $d
+     * @param \tgseclib\Math\BigInteger $n
+     * @param \tgseclib\Math\BigInteger $e
+     * @param \tgseclib\Math\BigInteger $d
      * @param array $primes
      * @param array $exponents
      * @param array $coefficients
@@ -118,8 +118,8 @@ abstract class PKCS8 extends Progenitor
      * Convert a public key to the appropriate format
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $n
-     * @param \phpseclib3\Math\BigInteger $e
+     * @param \tgseclib\Math\BigInteger $n
+     * @param \tgseclib\Math\BigInteger $e
      * @param array $options optional
      * @return string
      */

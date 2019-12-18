@@ -13,10 +13,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace tgseclib\Crypt\EC\Curves;
 
-use phpseclib3\Crypt\EC\BaseCurves\Prime;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Crypt\EC\BaseCurves\Prime;
+use tgseclib\Math\BigInteger;
 
 class secp160r2 extends Prime
 {

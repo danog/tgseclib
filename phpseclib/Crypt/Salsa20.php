@@ -13,12 +13,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Crypt\Common\StreamCipher;
-use phpseclib3\Exception\InsufficientSetupException;
-use phpseclib3\Exception\BadDecryptionException;
-use phpseclib3\Common\Functions\Strings;
+use tgseclib\Crypt\Common\StreamCipher;
+use tgseclib\Exception\InsufficientSetupException;
+use tgseclib\Exception\BadDecryptionException;
+use tgseclib\Common\Functions\Strings;
 
 /**
  * Pure-PHP implementation of Salsa20.
@@ -62,7 +62,7 @@ class Salsa20 extends StreamCipher
 
     /**#@+
      * @access private
-     * @see \phpseclib3\Crypt\Salsa20::crypt()
+     * @see \tgseclib\Crypt\Salsa20::crypt()
     */
     const ENCRYPT = 0;
     const DECRYPT = 1;
@@ -99,8 +99,8 @@ class Salsa20 extends StreamCipher
     /**
      * Default Constructor.
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::__construct()
-     * @return \phpseclib3\Crypt\Salsa20
+     * @see \tgseclib\Crypt\Common\SymmetricKey::__construct()
+     * @return \tgseclib\Crypt\Salsa20
      */
     public function __construct()
     {
@@ -269,7 +269,7 @@ class Salsa20 extends StreamCipher
     /**
      * Encrypts a message.
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::decrypt()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::decrypt()
      * @see self::crypt()
      * @param string $plaintext
      * @return string $ciphertext
@@ -289,7 +289,7 @@ class Salsa20 extends StreamCipher
      * $this->decrypt($this->encrypt($plaintext)) == $this->encrypt($this->encrypt($plaintext)).
      * At least if the continuous buffer is disabled.
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::encrypt()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::encrypt()
      * @see self::crypt()
      * @param string $ciphertext
      * @return string $plaintext

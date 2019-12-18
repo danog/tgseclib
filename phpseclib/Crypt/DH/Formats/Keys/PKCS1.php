@@ -21,12 +21,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DH\Formats\Keys;
+namespace tgseclib\Crypt\DH\Formats\Keys;
 
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
-use phpseclib3\File\ASN1;
-use phpseclib3\File\ASN1\Maps;
+use tgseclib\Math\BigInteger;
+use tgseclib\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
+use tgseclib\File\ASN1;
+use tgseclib\File\ASN1\Maps;
 
 /**
  * "PKCS1" Formatted DH Key Handler

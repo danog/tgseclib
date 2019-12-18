@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common;
+namespace tgseclib\Crypt\Common;
 
 /**
  * PublicKey interface

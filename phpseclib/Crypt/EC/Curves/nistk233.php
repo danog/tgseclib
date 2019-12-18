@@ -13,7 +13,7 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace tgseclib\Crypt\EC\Curves;
 
 final class nistk233 extends sect233k1
 {

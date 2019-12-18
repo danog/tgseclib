@@ -5,7 +5,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\Random;
+use tgseclib\Crypt\Random;
 
 class Unit_Crypt_RandomTest extends PhpseclibTestCase
 {

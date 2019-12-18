@@ -13,11 +13,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Exception\NoKeyLoadedException;
-use phpseclib3\Crypt\Common\PrivateKey;
-use phpseclib3\File\X509;
+use tgseclib\Exception\NoKeyLoadedException;
+use tgseclib\Crypt\Common\PrivateKey;
+use tgseclib\File\X509;
 
 /**
  * PublicKeyLoader

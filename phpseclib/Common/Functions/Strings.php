@@ -13,10 +13,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Common\Functions;
+namespace tgseclib\Common\Functions;
 
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\Common\FiniteField;
+use tgseclib\Math\BigInteger;
+use tgseclib\Math\Common\FiniteField;
 
 /**
  * Common String Functions
@@ -182,7 +182,7 @@ abstract class Strings
                     break;
                 case 'i':
                     if (!$element instanceof BigInteger && !$element instanceof FiniteField\Integer) {
-                        throw new \InvalidArgumentException('A phpseclib3\Math\BigInteger or phpseclib3\Math\Common\FiniteField\Integer object was expected.');
+                        throw new \InvalidArgumentException('A tgseclib\Math\BigInteger or tgseclib\Math\Common\FiniteField\Integer object was expected.');
                     }
                     $element = $element->toBytes(true);
                     $result.= pack('Na*', strlen($element), $element);

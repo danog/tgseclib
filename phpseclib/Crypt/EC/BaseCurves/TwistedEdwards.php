@@ -26,11 +26,11 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\BaseCurves;
+namespace tgseclib\Crypt\EC\BaseCurves;
 
-use phpseclib3\Math\PrimeField;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\PrimeField\Integer as PrimeInteger;
+use tgseclib\Math\PrimeField;
+use tgseclib\Math\BigInteger;
+use tgseclib\Math\PrimeField\Integer as PrimeInteger;
 
 /**
  * Curves over a*x^2 + y^2 = 1 + d*x^2*y^2
@@ -137,7 +137,7 @@ class TwistedEdwards extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getA()
     {
@@ -147,7 +147,7 @@ class TwistedEdwards extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getD()
     {
@@ -175,7 +175,7 @@ class TwistedEdwards extends Base
     /**
      * Returns the affine point
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToAffine(array $p)
     {
@@ -193,7 +193,7 @@ class TwistedEdwards extends Base
     /**
      * Returns the modulo
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     public function getModulo()
     {

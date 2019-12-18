@@ -13,7 +13,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File\ASN1;
+namespace tgseclib\File\ASN1;
 
 /**
  * ASN.1 Raw Element
@@ -39,7 +39,7 @@ class Element
      * Constructor
      *
      * @param string $encoded
-     * @return \phpseclib3\File\ASN1\Element
+     * @return \tgseclib\File\ASN1\Element
      * @access public
      */
     public function __construct($encoded)

@@ -15,9 +15,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DSA\Formats\Keys;
+namespace tgseclib\Crypt\DSA\Formats\Keys;
 
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\BigInteger;
 
 /**
  * Raw DSA Key Handler
@@ -62,11 +62,11 @@ abstract class Raw
      * Convert a private key to the appropriate format.
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $p
-     * @param \phpseclib3\Math\BigInteger $q
-     * @param \phpseclib3\Math\BigInteger $g
-     * @param \phpseclib3\Math\BigInteger $y
-     * @param \phpseclib3\Math\BigInteger $x
+     * @param \tgseclib\Math\BigInteger $p
+     * @param \tgseclib\Math\BigInteger $q
+     * @param \tgseclib\Math\BigInteger $g
+     * @param \tgseclib\Math\BigInteger $y
+     * @param \tgseclib\Math\BigInteger $x
      * @param string $password optional
      * @return string
      */
@@ -79,10 +79,10 @@ abstract class Raw
      * Convert a public key to the appropriate format
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $p
-     * @param \phpseclib3\Math\BigInteger $q
-     * @param \phpseclib3\Math\BigInteger $g
-     * @param \phpseclib3\Math\BigInteger $y
+     * @param \tgseclib\Math\BigInteger $p
+     * @param \tgseclib\Math\BigInteger $q
+     * @param \tgseclib\Math\BigInteger $g
+     * @param \tgseclib\Math\BigInteger $y
      * @return string
      */
     public static function savePublicKey(BigInteger $p, BigInteger $q, BigInteger $g, BigInteger $y)

@@ -5,9 +5,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\File\X509;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Crypt\PublicKeyLoader;
+use tgseclib\File\X509;
+use tgseclib\Crypt\RSA;
+use tgseclib\Crypt\PublicKeyLoader;
 
 class Unit_File_X509_CSRTest extends PhpseclibTestCase
 {

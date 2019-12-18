@@ -11,19 +11,19 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\RSA;
+namespace tgseclib\Crypt\RSA;
 
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\File\ASN1;
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Hash;
-use phpseclib3\Exception\NoKeyLoadedException;
-use phpseclib3\Exception\UnsupportedFormatException;
-use phpseclib3\Crypt\Random;
-use phpseclib3\Crypt\Common;
-use phpseclib3\File\ASN1\Maps\DigestInfo;
-use phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use tgseclib\Crypt\RSA;
+use tgseclib\Math\BigInteger;
+use tgseclib\File\ASN1;
+use tgseclib\Common\Functions\Strings;
+use tgseclib\Crypt\Hash;
+use tgseclib\Exception\NoKeyLoadedException;
+use tgseclib\Exception\UnsupportedFormatException;
+use tgseclib\Crypt\Random;
+use tgseclib\Crypt\Common;
+use tgseclib\File\ASN1\Maps\DigestInfo;
+use tgseclib\Crypt\RSA\Formats\Keys\PSS;
 
 /**
  * Raw RSA Key Handler
@@ -39,8 +39,8 @@ class PublicKey extends RSA implements Common\PublicKey
     /**
      * Exponentiate
      *
-     * @param \phpseclib3\Math\BigInteger $x
-     * @return \phpseclib3\Math\BigInteger
+     * @param \tgseclib\Math\BigInteger $x
+     * @return \tgseclib\Math\BigInteger
      */
     private function exponentiate(BigInteger $x)
     {
@@ -53,8 +53,8 @@ class PublicKey extends RSA implements Common\PublicKey
      * See {@link http://tools.ietf.org/html/rfc3447#section-5.2.2 RFC3447#section-5.2.2}.
      *
      * @access private
-     * @param \phpseclib3\Math\BigInteger $s
-     * @return bool|\phpseclib3\Math\BigInteger
+     * @param \tgseclib\Math\BigInteger $s
+     * @return bool|\tgseclib\Math\BigInteger
      */
     private function rsavp1($s)
     {
@@ -400,8 +400,8 @@ class PublicKey extends RSA implements Common\PublicKey
      * See {@link http://tools.ietf.org/html/rfc3447#section-5.1.1 RFC3447#section-5.1.1}.
      *
      * @access private
-     * @param \phpseclib3\Math\BigInteger $m
-     * @return bool|\phpseclib3\Math\BigInteger
+     * @param \tgseclib\Math\BigInteger $m
+     * @return bool|\tgseclib\Math\BigInteger
      */
     private function rsaep($m)
     {

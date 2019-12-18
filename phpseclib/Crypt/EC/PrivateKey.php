@@ -11,20 +11,20 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC;
+namespace tgseclib\Crypt\EC;
 
-use phpseclib3\Crypt\EC;
-use phpseclib3\Crypt\EC\Formats\Signature\ASN1 as ASN1Signature;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use phpseclib3\Crypt\Hash;
-use phpseclib3\Crypt\EC\Curves\Ed25519;
-use phpseclib3\Crypt\EC\Curves\Curve25519;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use phpseclib3\Crypt\Common;
-use phpseclib3\Exception\UnsupportedOperationException;
-use phpseclib3\Common\Functions\Strings;
+use tgseclib\Crypt\EC;
+use tgseclib\Crypt\EC\Formats\Signature\ASN1 as ASN1Signature;
+use tgseclib\Math\BigInteger;
+use tgseclib\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use tgseclib\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use tgseclib\Crypt\Hash;
+use tgseclib\Crypt\EC\Curves\Ed25519;
+use tgseclib\Crypt\EC\Curves\Curve25519;
+use tgseclib\Crypt\EC\Formats\Keys\PKCS1;
+use tgseclib\Crypt\Common;
+use tgseclib\Exception\UnsupportedOperationException;
+use tgseclib\Common\Functions\Strings;
 
 /**
  * EC Private Key

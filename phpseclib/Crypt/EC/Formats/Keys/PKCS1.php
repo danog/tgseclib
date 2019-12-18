@@ -25,18 +25,18 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC\Formats\Keys;
+namespace tgseclib\Crypt\EC\Formats\Keys;
 
-use phpseclib3\Math\Common\FiniteField\Integer;
-use phpseclib3\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
-use phpseclib3\File\ASN1;
-use phpseclib3\File\ASN1\Maps;
-use phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\Common\FiniteField\Integer;
+use tgseclib\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
+use tgseclib\File\ASN1;
+use tgseclib\File\ASN1\Maps;
+use tgseclib\Crypt\EC\BaseCurves\Base as BaseCurve;
+use tgseclib\Math\BigInteger;
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use phpseclib3\Exception\UnsupportedCurveException;
+use tgseclib\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use tgseclib\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use tgseclib\Exception\UnsupportedCurveException;
 
 /**
  * "PKCS1" (RFC5915) Formatted EC Key Handler
@@ -112,9 +112,9 @@ abstract class PKCS1 extends Progenitor
      * Convert a private key to the appropriate format.
      *
      * @access public
-     * @param \phpseclib3\Math\Common\FiniteField\Integer $privateKey
-     * @param \phpseclib3\Crypt\EC\BaseCurves\Base $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \tgseclib\Math\Common\FiniteField\Integer $privateKey
+     * @param \tgseclib\Crypt\EC\BaseCurves\Base $curve
+     * @param \tgseclib\Math\Common\FiniteField\Integer[] $publicKey
      * @param string $password optional
      * @param array $options optional
      * @return string

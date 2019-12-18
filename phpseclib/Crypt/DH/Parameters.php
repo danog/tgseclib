@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DH;
+namespace tgseclib\Crypt\DH;
 
-use phpseclib3\Crypt\DH;
+use tgseclib\Crypt\DH;
 
 /**
  * DH Parameters

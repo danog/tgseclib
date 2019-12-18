@@ -13,10 +13,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\BaseCurves;
+namespace tgseclib\Crypt\EC\BaseCurves;
 
-use phpseclib3\Math\Common\FiniteField;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\Common\FiniteField;
+use tgseclib\Math\BigInteger;
 
 /**
  * Base
@@ -51,7 +51,7 @@ abstract class Base
     /**
      * Finite Field Integer factory
      *
-     * @var \phpseclib3\Math\FiniteField\Integer
+     * @var \tgseclib\Math\FiniteField\Integer
      */
     protected $factory;
 
@@ -149,7 +149,7 @@ abstract class Base
     /**
      * Returns the Order
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     public function getOrder()
     {

@@ -15,9 +15,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common\Formats\Signature;
+namespace tgseclib\Crypt\Common\Formats\Signature;
 
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\BigInteger;
 
 /**
  * Raw Signature Handler
@@ -55,8 +55,8 @@ abstract class Raw
      * Returns a signature in the appropriate format
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $r
-     * @param \phpseclib3\Math\BigInteger $s
+     * @param \tgseclib\Math\BigInteger $r
+     * @param \tgseclib\Math\BigInteger $s
      * @return string
      */
     public static function save(BigInteger $r, BigInteger $s)

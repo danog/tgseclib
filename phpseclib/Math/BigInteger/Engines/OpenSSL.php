@@ -13,11 +13,11 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math\BigInteger\Engines;
+namespace tgseclib\Math\BigInteger\Engines;
 
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Crypt\RSA\Formats\Keys\PKCS8;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Crypt\RSA;
+use tgseclib\Crypt\RSA\Formats\Keys\PKCS8;
+use tgseclib\Math\BigInteger;
 
 /**
  * OpenSSL Modular Exponentiation Engine

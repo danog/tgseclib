@@ -13,16 +13,16 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common\Formats\Keys;
+namespace tgseclib\Crypt\Common\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
 use ParagonIE\ConstantTime\Hex;
-use phpseclib3\Crypt\Random;
-use phpseclib3\Crypt\AES;
-use phpseclib3\Crypt\DES;
-use phpseclib3\Crypt\TripleDES;
-use phpseclib3\File\ASN1;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
+use tgseclib\Crypt\Random;
+use tgseclib\Crypt\AES;
+use tgseclib\Crypt\DES;
+use tgseclib\Crypt\TripleDES;
+use tgseclib\File\ASN1;
+use tgseclib\Exception\UnsupportedAlgorithmException;
 
 /**
  * PKCS1 Formatted Key Handler

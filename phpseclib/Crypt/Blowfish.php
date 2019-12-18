@@ -16,7 +16,7 @@
  * <?php
  *    include 'vendor/autoload.php';
  *
- *    $blowfish = new \phpseclib3\Crypt\Blowfish();
+ *    $blowfish = new \tgseclib\Crypt\Blowfish();
  *
  *    $blowfish->setKey('12345678901234567890123456789012');
  *
@@ -35,9 +35,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Crypt\Common\BlockCipher;
+use tgseclib\Crypt\Common\BlockCipher;
 
 /**
  * Pure-PHP implementation of Blowfish.
@@ -52,7 +52,7 @@ class Blowfish extends BlockCipher
     /**
      * Block Length of the cipher
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::block_size
+     * @see \tgseclib\Crypt\Common\SymmetricKey::block_size
      * @var int
      * @access private
      */
@@ -61,7 +61,7 @@ class Blowfish extends BlockCipher
     /**
      * The mcrypt specific name of the cipher
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::cipher_name_mcrypt
+     * @see \tgseclib\Crypt\Common\SymmetricKey::cipher_name_mcrypt
      * @var string
      * @access private
      */
@@ -70,7 +70,7 @@ class Blowfish extends BlockCipher
     /**
      * Optimizing value while CFB-encrypting
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::cfb_init_len
+     * @see \tgseclib\Crypt\Common\SymmetricKey::cfb_init_len
      * @var int
      * @access private
      */
@@ -275,7 +275,7 @@ class Blowfish extends BlockCipher
     /**
      * The Key Length (in bytes)
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::setKeyLength()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::setKeyLength()
      * @var int
      * @access private
      * @internal The max value is 256 / 8 = 32, the min value is 128 / 8 = 16.  Exists in conjunction with $Nk
@@ -323,9 +323,9 @@ class Blowfish extends BlockCipher
     /**
      * Test for engine validity
      *
-     * This is mainly just a wrapper to set things up for \phpseclib3\Crypt\Common\SymmetricKey::isValidEngine()
+     * This is mainly just a wrapper to set things up for \tgseclib\Crypt\Common\SymmetricKey::isValidEngine()
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::isValidEngine()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::isValidEngine()
      * @param int $engine
      * @access protected
      * @return bool
@@ -349,7 +349,7 @@ class Blowfish extends BlockCipher
     /**
      * Setup the key (expansion)
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::_setupKey()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::_setupKey()
      * @access private
      */
     protected function setupKey()
@@ -472,7 +472,7 @@ class Blowfish extends BlockCipher
     /**
      * Setup the performance-optimized function for de/encrypt()
      *
-     * @see \phpseclib3\Crypt\Common\SymmetricKey::_setupInlineCrypt()
+     * @see \tgseclib\Crypt\Common\SymmetricKey::_setupInlineCrypt()
      * @access private
      */
     protected function setupInlineCrypt()

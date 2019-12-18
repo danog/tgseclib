@@ -13,11 +13,11 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace tgseclib\Crypt\EC\Curves;
 
-use phpseclib3\Math\Common\FiniteField\Integer;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\Common\FiniteField\Integer;
+use tgseclib\Crypt\EC\BaseCurves\Montgomery;
+use tgseclib\Math\BigInteger;
 
 class Curve448 extends Montgomery
 {

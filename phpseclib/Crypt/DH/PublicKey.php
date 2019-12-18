@@ -11,10 +11,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DH;
+namespace tgseclib\Crypt\DH;
 
-use phpseclib3\Crypt\DH;
-use phpseclib3\Crypt\Common;
+use tgseclib\Crypt\DH;
+use tgseclib\Crypt\Common;
 
 /**
  * DH Public Key
@@ -44,7 +44,7 @@ class PublicKey extends DH
     /**
      * Returns the public key as a BigInteger
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     public function toBigInteger()
     {

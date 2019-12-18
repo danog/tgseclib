@@ -24,14 +24,14 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\BaseCurves;
+namespace tgseclib\Crypt\EC\BaseCurves;
 
-use phpseclib3\Math\Common\FiniteField\Integer;
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Math\PrimeField;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Crypt\EC\Curves\Curve25519;
-use phpseclib3\Math\PrimeField\Integer as PrimeInteger;
+use tgseclib\Math\Common\FiniteField\Integer;
+use tgseclib\Common\Functions\Strings;
+use tgseclib\Math\PrimeField;
+use tgseclib\Math\BigInteger;
+use tgseclib\Crypt\EC\Curves\Curve25519;
+use tgseclib\Math\PrimeField\Integer as PrimeInteger;
 
 /**
  * Curves over y^2 = x^3 + a*x + x
@@ -45,7 +45,7 @@ class Montgomery extends Base
     /**
      * Prime Field Integer factory
      *
-     * @var \phpseclib3\Math\PrimeFields
+     * @var \tgseclib\Math\PrimeFields
      */
     protected $factory;
 
@@ -252,7 +252,7 @@ class Montgomery extends Base
      *
      *   x=X/Z
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToInternal(array $p)
     {
@@ -272,7 +272,7 @@ class Montgomery extends Base
     /**
      * Returns the affine point
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToAffine(array $p)
     {

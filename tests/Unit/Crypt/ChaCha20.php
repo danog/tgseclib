@@ -5,7 +5,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\ChaCha20;
+use tgseclib\Crypt\ChaCha20;
 
 class Unit_Crypt_ChaCha20Test extends PhpseclibTestCase
 {

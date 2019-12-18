@@ -13,12 +13,12 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math\BigInteger\Engines\PHP;
+namespace tgseclib\Math\BigInteger\Engines\PHP;
 
-use phpseclib3\Math\BigInteger\Engines\PHP\Reductions\PowerOfTwo;
-use phpseclib3\Math\BigInteger\Engines\PHP;
-use phpseclib3\Math\BigInteger\Engines\PHP\Base;
-use phpseclib3\Math\BigInteger\Engines\Engine;
+use tgseclib\Math\BigInteger\Engines\PHP\Reductions\PowerOfTwo;
+use tgseclib\Math\BigInteger\Engines\PHP;
+use tgseclib\Math\BigInteger\Engines\PHP\Base;
+use tgseclib\Math\BigInteger\Engines\Engine;
 
 /**
  * PHP Montgomery Modular Exponentiation Engine
@@ -42,11 +42,11 @@ abstract class Montgomery extends Base
     /**
      * Performs modular exponentiation.
      *
-     * @param \phpseclib3\Math\BigInteger\Engines\Engine $x
-     * @param \phpseclib3\Math\BigInteger\Engines\Engine $e
-     * @param \phpseclib3\Math\BigInteger\Engines\Engine $n
+     * @param \tgseclib\Math\BigInteger\Engines\Engine $x
+     * @param \tgseclib\Math\BigInteger\Engines\Engine $e
+     * @param \tgseclib\Math\BigInteger\Engines\Engine $n
      * @param string $class
-     * @return \phpseclib3\Math\BigInteger\Engines\Engine
+     * @return \tgseclib\Math\BigInteger\Engines\Engine
      */
     protected static function slidingWindow(Engine $x, Engine $e, Engine $n, $class)
     {

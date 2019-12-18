@@ -10,7 +10,7 @@
  * <?php
  * include 'vendor/autoload.php';
  *
- * $private = \phpseclib3\Crypt\DSA::createKey();
+ * $private = \tgseclib\Crypt\DSA::createKey();
  * $public = $private->getPublicKey();
  *
  * $plaintext = 'terrafrost';
@@ -29,14 +29,14 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Crypt\Common\AsymmetricKey;
-use phpseclib3\Crypt\DSA\PrivateKey;
-use phpseclib3\Crypt\DSA\PublicKey;
-use phpseclib3\Crypt\DSA\Parameters;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Exception\InsufficientSetupException;
+use tgseclib\Crypt\Common\AsymmetricKey;
+use tgseclib\Crypt\DSA\PrivateKey;
+use tgseclib\Crypt\DSA\PublicKey;
+use tgseclib\Crypt\DSA\Parameters;
+use tgseclib\Math\BigInteger;
+use tgseclib\Exception\InsufficientSetupException;
 
 /**
  * Pure-PHP FIPS 186-4 compliant implementation of DSA.
@@ -58,7 +58,7 @@ abstract class DSA extends AsymmetricKey
     /**
      * DSA Prime P
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $p;
@@ -68,7 +68,7 @@ abstract class DSA extends AsymmetricKey
      *
      * Prime divisor of p-1
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $q;
@@ -76,7 +76,7 @@ abstract class DSA extends AsymmetricKey
     /**
      * DSA Group Generator G
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $g;
@@ -84,7 +84,7 @@ abstract class DSA extends AsymmetricKey
     /**
      * DSA public key value y
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $y;
@@ -111,7 +111,7 @@ abstract class DSA extends AsymmetricKey
      * @access public
      * @param int $L
      * @param int $N
-     * @return \phpseclib3\Crypt\DSA|bool
+     * @return \tgseclib\Crypt\DSA|bool
      */
     public static function createParameters($L = 2048, $N = 224)
     {

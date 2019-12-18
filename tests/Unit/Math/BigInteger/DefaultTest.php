@@ -5,7 +5,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use \phpseclib3\Math\BigInteger;
+use \tgseclib\Math\BigInteger;
 
 class Unit_Math_BigInteger_DefaultTest extends Unit_Math_BigInteger_TestCase
 {
@@ -16,6 +16,6 @@ class Unit_Math_BigInteger_DefaultTest extends Unit_Math_BigInteger_TestCase
 
     public static function getStaticClass()
     {
-        return 'phpseclib3\Math\BigInteger';
+        return 'tgseclib\Math\BigInteger';
     }
 }

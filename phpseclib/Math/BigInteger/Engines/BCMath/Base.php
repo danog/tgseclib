@@ -13,9 +13,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math\BigInteger\Engines\BCMath;
+namespace tgseclib\Math\BigInteger\Engines\BCMath;
 
-use phpseclib3\Math\BigInteger\Engines\BCMath;
+use tgseclib\Math\BigInteger\Engines\BCMath;
 
 /**
  * Sliding Window Exponentiation Engine
@@ -54,11 +54,11 @@ abstract class Base extends BCMath
     /**
      * Performs modular exponentiation.
      *
-     * @param \phpseclib3\Math\BigInteger\Engines\BCMath $x
-     * @param \phpseclib3\Math\BigInteger\Engines\BCMath $e
-     * @param \phpseclib3\Math\BigInteger\Engines\BCMath $n
+     * @param \tgseclib\Math\BigInteger\Engines\BCMath $x
+     * @param \tgseclib\Math\BigInteger\Engines\BCMath $e
+     * @param \tgseclib\Math\BigInteger\Engines\BCMath $n
      * @param string $class
-     * @return \phpseclib3\Math\BigInteger\Engines\BCMath
+     * @return \tgseclib\Math\BigInteger\Engines\BCMath
      */
     protected static function powModHelper(BCMath $x, BCMath $e, BCMath $n, $class)
     {

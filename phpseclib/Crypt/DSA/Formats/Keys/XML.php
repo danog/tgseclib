@@ -19,10 +19,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DSA\Formats\Keys;
+namespace tgseclib\Crypt\DSA\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Math\BigInteger;
+use tgseclib\Math\BigInteger;
 
 /**
  * XML Formatted DSA Key Handler
@@ -114,10 +114,10 @@ abstract class XML
      * See https://www.w3.org/TR/xmldsig-core/#sec-DSAKeyValue
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $p
-     * @param \phpseclib3\Math\BigInteger $q
-     * @param \phpseclib3\Math\BigInteger $g
-     * @param \phpseclib3\Math\BigInteger $y
+     * @param \tgseclib\Math\BigInteger $p
+     * @param \tgseclib\Math\BigInteger $q
+     * @param \tgseclib\Math\BigInteger $g
+     * @param \tgseclib\Math\BigInteger $y
      * @return string
      */
     public static function savePublicKey(BigInteger $p, BigInteger $q, BigInteger $g, BigInteger $y)

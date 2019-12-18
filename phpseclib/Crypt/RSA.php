@@ -10,7 +10,7 @@
  * <?php
  * include 'vendor/autoload.php';
  *
- * $private = \phpseclib3\Crypt\RSA::createKey();
+ * $private = \tgseclib\Crypt\RSA::createKey();
  * $public = $private->getPublicKey();
  *
  * $plaintext = 'terrafrost';
@@ -26,7 +26,7 @@
  * <?php
  * include 'vendor/autoload.php';
  *
- * $private = \phpseclib3\Crypt\RSA::createKey();
+ * $private = \tgseclib\Crypt\RSA::createKey();
  * $public = $private->getPublicKey();
  *
  * $plaintext = 'terrafrost';
@@ -45,15 +45,15 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Crypt\Common\AsymmetricKey;
-use phpseclib3\Crypt\RSA\PrivateKey;
-use phpseclib3\Crypt\RSA\PublicKey;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\Exception\InconsistentSetupException;
-use phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use tgseclib\Crypt\Common\AsymmetricKey;
+use tgseclib\Crypt\RSA\PrivateKey;
+use tgseclib\Crypt\RSA\PublicKey;
+use tgseclib\Math\BigInteger;
+use tgseclib\Exception\UnsupportedAlgorithmException;
+use tgseclib\Exception\InconsistentSetupException;
+use tgseclib\Crypt\RSA\Formats\Keys\PSS;
 
 /**
  * Pure-PHP PKCS#1 compliant implementation of RSA.
@@ -178,7 +178,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Hash function for the Mask Generation Function
      *
-     * @var \phpseclib3\Crypt\Hash
+     * @var \tgseclib\Crypt\Hash
      * @access private
      */
     protected $mgfHash;
@@ -194,7 +194,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Modulus (ie. n)
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $modulus;
@@ -202,7 +202,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Modulus length
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $k;
@@ -210,7 +210,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Exponent (ie. e or d)
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      * @access private
      */
     protected $exponent;
@@ -457,7 +457,7 @@ abstract class RSA extends AsymmetricKey
      * See {@link http://tools.ietf.org/html/rfc3447#section-4.1 RFC3447#section-4.1}.
      *
      * @access private
-     * @param bool|\phpseclib3\Math\BigInteger $x
+     * @param bool|\tgseclib\Math\BigInteger $x
      * @param int $xLen
      * @return bool|string
      */
@@ -480,7 +480,7 @@ abstract class RSA extends AsymmetricKey
      *
      * @access private
      * @param string $x
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     protected function os2ip($x)
     {
@@ -596,7 +596,7 @@ abstract class RSA extends AsymmetricKey
     {
         $new = clone $this;
 
-        // \phpseclib3\Crypt\Hash supports algorithms that PKCS#1 doesn't support.  md5-96 and sha1-96, for example.
+        // \tgseclib\Crypt\Hash supports algorithms that PKCS#1 doesn't support.  md5-96 and sha1-96, for example.
         switch (strtolower($hash)) {
             case 'md2':
             case 'md5':
@@ -632,7 +632,7 @@ abstract class RSA extends AsymmetricKey
     {
         $new = clone $this;
 
-        // \phpseclib3\Crypt\Hash supports algorithms that PKCS#1 doesn't support.  md5-96 and sha1-96, for example.
+        // \tgseclib\Crypt\Hash supports algorithms that PKCS#1 doesn't support.  md5-96 and sha1-96, for example.
         switch (strtolower($hash)) {
             case 'md2':
             case 'md5':

@@ -15,11 +15,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common\Formats\Keys;
+namespace tgseclib\Crypt\Common\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Random;
+use tgseclib\Common\Functions\Strings;
+use tgseclib\Crypt\Random;
 
 /**
  * OpenSSH Formatted RSA Key Handler

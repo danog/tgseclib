@@ -5,7 +5,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\Twofish;
+use tgseclib\Crypt\Twofish;
 
 class Unit_Crypt_TwofishTest extends PhpseclibTestCase
 {

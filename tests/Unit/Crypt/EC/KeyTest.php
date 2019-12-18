@@ -5,14 +5,14 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\EC;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS8;
-use phpseclib3\Crypt\EC\Formats\Keys\PuTTY;
-use phpseclib3\Crypt\EC\Formats\Keys\OpenSSH;
-use phpseclib3\Crypt\EC\Formats\Keys\XML;
-use phpseclib3\Crypt\PublicKeyLoader;
-use phpseclib3\Crypt\EC\PrivateKey;
+use tgseclib\Crypt\EC;
+use tgseclib\Crypt\EC\Formats\Keys\PKCS1;
+use tgseclib\Crypt\EC\Formats\Keys\PKCS8;
+use tgseclib\Crypt\EC\Formats\Keys\PuTTY;
+use tgseclib\Crypt\EC\Formats\Keys\OpenSSH;
+use tgseclib\Crypt\EC\Formats\Keys\XML;
+use tgseclib\Crypt\PublicKeyLoader;
+use tgseclib\Crypt\EC\PrivateKey;
 
 class Unit_Crypt_EC_LoadKeyTest extends PhpseclibTestCase
 {

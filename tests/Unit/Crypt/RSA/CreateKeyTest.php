@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Crypt\RSA\Formats\Keys\PKCS1;
-use phpseclib3\Crypt\RSA\PrivateKey;
-use phpseclib3\Crypt\RSA\PublicKey;
+use tgseclib\Crypt\RSA;
+use tgseclib\Crypt\RSA\Formats\Keys\PKCS1;
+use tgseclib\Crypt\RSA\PrivateKey;
+use tgseclib\Crypt\RSA\PublicKey;
 
 class Unit_Crypt_RSA_CreateKeyTest extends PhpseclibTestCase
 {

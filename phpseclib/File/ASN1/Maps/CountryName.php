@@ -13,9 +13,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File\ASN1\Maps;
+namespace tgseclib\File\ASN1\Maps;
 
-use phpseclib3\File\ASN1;
+use tgseclib\File\ASN1;
 
 /**
  * CountryName
@@ -28,8 +28,8 @@ abstract class CountryName
 {
     const MAP = [
         'type'     => ASN1::TYPE_CHOICE,
-        // if class isn't present it's assumed to be \phpseclib3\File\ASN1::CLASS_UNIVERSAL or
-        // (if constant is present) \phpseclib3\File\ASN1::CLASS_CONTEXT_SPECIFIC
+        // if class isn't present it's assumed to be \tgseclib\File\ASN1::CLASS_UNIVERSAL or
+        // (if constant is present) \tgseclib\File\ASN1::CLASS_CONTEXT_SPECIFIC
         'class'    => ASN1::CLASS_APPLICATION,
         'cast'     => 1,
         'children' => [

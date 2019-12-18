@@ -13,7 +13,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Exception;
+namespace tgseclib\Exception;
 
 /**
  * BadDecryptionException

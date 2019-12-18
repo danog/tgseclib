@@ -11,11 +11,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DSA;
+namespace tgseclib\Crypt\DSA;
 
-use phpseclib3\Crypt\DSA;
-use phpseclib3\Crypt\DSA\Formats\Signature\ASN1 as ASN1Signature;
-use phpseclib3\Crypt\Common;
+use tgseclib\Crypt\DSA;
+use tgseclib\Crypt\DSA\Formats\Signature\ASN1 as ASN1Signature;
+use tgseclib\Crypt\Common;
 
 /**
  * DSA Public Key

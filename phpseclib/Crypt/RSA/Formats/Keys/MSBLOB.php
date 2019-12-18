@@ -17,11 +17,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\RSA\Formats\Keys;
+namespace tgseclib\Crypt\RSA\Formats\Keys;
 
 use ParagonIE\ConstantTime\Base64;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Common\Functions\Strings;
+use tgseclib\Math\BigInteger;
+use tgseclib\Common\Functions\Strings;
 
 /**
  * Microsoft BLOB Formatted RSA Key Handler
@@ -176,9 +176,9 @@ abstract class MSBLOB
      * Convert a private key to the appropriate format.
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $n
-     * @param \phpseclib3\Math\BigInteger $e
-     * @param \phpseclib3\Math\BigInteger $d
+     * @param \tgseclib\Math\BigInteger $n
+     * @param \tgseclib\Math\BigInteger $e
+     * @param \tgseclib\Math\BigInteger $d
      * @param array $primes
      * @param array $exponents
      * @param array $coefficients
@@ -210,8 +210,8 @@ abstract class MSBLOB
      * Convert a public key to the appropriate format
      *
      * @access public
-     * @param \phpseclib3\Math\BigInteger $n
-     * @param \phpseclib3\Math\BigInteger $e
+     * @param \tgseclib\Math\BigInteger $n
+     * @param \tgseclib\Math\BigInteger $e
      * @return string
      */
     public static function savePublicKey(BigInteger $n, BigInteger $e)

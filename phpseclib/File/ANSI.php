@@ -5,10 +5,10 @@
  *
  * PHP version 5
  *
- * If you call read() in \phpseclib3\Net\SSH2 you may get {@link http://en.wikipedia.org/wiki/ANSI_escape_code ANSI escape codes} back.
+ * If you call read() in \tgseclib\Net\SSH2 you may get {@link http://en.wikipedia.org/wiki/ANSI_escape_code ANSI escape codes} back.
  * They'd look like chr(0x1B) . '[00m' or whatever (0x1B = ESC).  They tell a
  * {@link http://en.wikipedia.org/wiki/Terminal_emulator terminal emulator} how to format the characters, what
- * color to display them in, etc. \phpseclib3\File\ANSI is a {@link http://en.wikipedia.org/wiki/VT100 VT100} terminal emulator.
+ * color to display them in, etc. \tgseclib\File\ANSI is a {@link http://en.wikipedia.org/wiki/VT100 VT100} terminal emulator.
  *
  * @category  File
  * @package   ANSI
@@ -18,7 +18,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File;
+namespace tgseclib\File;
 
 /**
  * Pure-PHP ANSI Decoder
@@ -160,7 +160,7 @@ class ANSI
     /**
      * Default Constructor.
      *
-     * @return \phpseclib3\File\ANSI
+     * @return \tgseclib\File\ANSI
      * @access public
      */
     public function __construct()

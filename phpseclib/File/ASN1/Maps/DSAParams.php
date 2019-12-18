@@ -13,9 +13,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File\ASN1\Maps;
+namespace tgseclib\File\ASN1\Maps;
 
-use phpseclib3\File\ASN1;
+use tgseclib\File\ASN1;
 
 /**
  * DSAParams

@@ -5,7 +5,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-use phpseclib3\File\X509;
+use tgseclib\File\X509;
 
 class Unit_File_X509_CRLTest extends PhpseclibTestCase
 {

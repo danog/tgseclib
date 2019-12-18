@@ -10,7 +10,7 @@
  * <?php
  * include 'vendor/autoload.php';
  *
- * $private = \phpseclib3\Crypt\EC::createKey('secp256k1');
+ * $private = \tgseclib\Crypt\EC::createKey('secp256k1');
  * $public = $private->getPublicKey();
  *
  * $plaintext = 'terrafrost';
@@ -29,24 +29,24 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace tgseclib\Crypt;
 
-use phpseclib3\Crypt\Common\AsymmetricKey;
-use phpseclib3\Crypt\EC\PrivateKey;
-use phpseclib3\Crypt\EC\PublicKey;
-use phpseclib3\Crypt\EC\Parameters;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use phpseclib3\Crypt\EC\Curves\Curve25519;
-use phpseclib3\Crypt\EC\Curves\Ed25519;
-use phpseclib3\Crypt\EC\Curves\Ed448;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use phpseclib3\File\ASN1\Maps\ECParameters;
-use phpseclib3\File\ASN1;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Exception\UnsupportedCurveException;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\Exception\UnsupportedOperationException;
+use tgseclib\Crypt\Common\AsymmetricKey;
+use tgseclib\Crypt\EC\PrivateKey;
+use tgseclib\Crypt\EC\PublicKey;
+use tgseclib\Crypt\EC\Parameters;
+use tgseclib\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use tgseclib\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use tgseclib\Crypt\EC\Curves\Curve25519;
+use tgseclib\Crypt\EC\Curves\Ed25519;
+use tgseclib\Crypt\EC\Curves\Ed448;
+use tgseclib\Crypt\EC\Formats\Keys\PKCS1;
+use tgseclib\File\ASN1\Maps\ECParameters;
+use tgseclib\File\ASN1;
+use tgseclib\Math\BigInteger;
+use tgseclib\Exception\UnsupportedCurveException;
+use tgseclib\Exception\UnsupportedAlgorithmException;
+use tgseclib\Exception\UnsupportedOperationException;
 
 /**
  * Pure-PHP implementation of EC.
@@ -75,7 +75,7 @@ abstract class EC extends AsymmetricKey
     /**
      * Curve
      *
-     * @var \phpseclib3\Crypt\EC\BaseCurves\Base
+     * @var \tgseclib\Crypt\EC\BaseCurves\Base
      */
     protected $curve;
 
@@ -107,7 +107,7 @@ abstract class EC extends AsymmetricKey
      *
      * Used for deterministic ECDSA
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      */
     protected $q;
 
@@ -119,7 +119,7 @@ abstract class EC extends AsymmetricKey
      * public key. But the x is different depending on which side of the equal sign
      * you're on. It's less ambiguous if you do dA * base point = (x, y)-coordinate.
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \tgseclib\Math\BigInteger
      */
     protected $x;
 
@@ -135,7 +135,7 @@ abstract class EC extends AsymmetricKey
      *
      * @access public
      * @param string $curve
-     * @return \phpseclib3\Crypt\EC\PrivateKey
+     * @return \tgseclib\Crypt\EC\PrivateKey
      */
     public static function createKey($curve)
     {
@@ -161,10 +161,10 @@ abstract class EC extends AsymmetricKey
         $privatekey = new PrivateKey;
 
         $curveName = $curve;
-        $curve = '\phpseclib3\Crypt\EC\Curves\\' . $curveName;
+        $curve = '\tgseclib\Crypt\EC\Curves\\' . $curveName;
         if (!class_exists($curve)) {
             $curveName = ucfirst($curveName);
-            $curve = '\phpseclib3\Crypt\EC\Curves\\' . $curveName;
+            $curve = '\tgseclib\Crypt\EC\Curves\\' . $curveName;
             if (!class_exists($curve)) {
                 throw new UnsupportedCurveException('Named Curve of ' . $curveName . ' is not supported');
             }

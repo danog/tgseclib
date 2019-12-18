@@ -21,12 +21,12 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\BaseCurves;
+namespace tgseclib\Crypt\EC\BaseCurves;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Math\BinaryField;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\BinaryField\Integer as BinaryInteger;
+use tgseclib\Common\Functions\Strings;
+use tgseclib\Math\BinaryField;
+use tgseclib\Math\BigInteger;
+use tgseclib\Math\BinaryField\Integer as BinaryInteger;
 
 /**
  * Curves over y^2 + x*y = x^3 + a*x^2 + b
@@ -40,7 +40,7 @@ class Binary extends Base
     /**
      * Binary Field Integer factory
      *
-     * @var \phpseclib3\Math\BinaryFields
+     * @var \tgseclib\Math\BinaryFields
      */
     protected $factory;
 
@@ -310,7 +310,7 @@ class Binary extends Base
     /**
      * Returns the modulo
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \tgseclib\Math\BigInteger
      */
     public function getModulo()
     {
@@ -320,7 +320,7 @@ class Binary extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getA()
     {
@@ -330,7 +330,7 @@ class Binary extends Base
     /**
      * Returns the a coefficient
      *
-     * @return \phpseclib3\Math\PrimeField\Integer
+     * @return \tgseclib\Math\PrimeField\Integer
      */
     public function getB()
     {
@@ -344,7 +344,7 @@ class Binary extends Base
      * To convert a Jacobian Coordinate to an Affine Point
      * you do (x / z^2, y / z^3)
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToAffine(array $p)
     {
@@ -363,7 +363,7 @@ class Binary extends Base
     /**
      * Converts an affine point to a jacobian coordinate
      *
-     * @return \phpseclib3\Math\PrimeField\Integer[]
+     * @return \tgseclib\Math\PrimeField\Integer[]
      */
     public function convertToInternal(array $p)
     {
