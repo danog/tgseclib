@@ -1,7 +1,7 @@
 {
-    "name": "phpseclib/phpseclib",
+    "name": "danog/tgseclib",
     "type": "library",
-    "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+    "description": "PHP Secure Communications Library (+Telegram-specific AES IGE primitives) - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
     "keywords": [
         "security",
         "crypto",
